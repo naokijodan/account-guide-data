@@ -165,7 +165,11 @@ checklist steps (checklist=true): 72
 
 設計書（`設計書.md` §5-3・§5-5）の方針どおり、拡張機能はこの `data` フォルダの中身をGitHub Pages経由で読み込みます。
 
-- 椛島さんが `steps.json` を編集 → GitHubへpush → GitHub Pagesに反映、という流れです
+- 公開リポジトリ: https://github.com/naokijodan/account-guide-data （public）
+- 公開URL（GitHub Pages）: https://naokijodan.github.io/account-guide-data/steps.json
+  （2026-09-16確認済み: 200 OK、`Content-Type: application/json`、`Access-Control-Allow-Origin: *`）
+- このフォルダ（`/Users/naokijodan/Desktop/アカウント開設ガイド君/data/`）がそのままGit管理下にあります（ブランチ `main`、リモート `origin`）
+- **`git push` した時点でGitHub Pagesに公開されます。** 椛島さんが `steps.json` を編集 → `node validate.js` でエラー0件を確認 → `git commit` → `git push`、という流れです
 - 拡張機能自体の再申請は不要で、次にパネルを開いたときから新しい内容が反映されます（即時反映ではなく「次回読み込み時」）
-- 公開先のリポジトリ名・URLは現時点では**未決**です。決まり次第、このREADMEと拡張機能側の `host_permissions` に反映してください
-- 公開前には必ず `node validate.js` でエラーが0件であることを確認してください
+- **公開前には必ず `node validate.js` でエラーが0件であることを確認してください**（pushすると即座に公開されるため）
+- **氏名・住所・電話番号などの個人情報（受講生の実データ）は、このフォルダのどのファイルにも絶対にコミットしないでください。** `steps.json` に入れてよいのは手順の案内文だけです
