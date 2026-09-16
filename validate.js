@@ -9,7 +9,8 @@
  *   - site が ebay / payoneer / general のいずれかか
  *   - pasteFields のキーが固定語彙の中にあるか
  *   - id（phase・step とも）が重複していないか
- *   - links が https のみで、許可したホスト（ebay.com / ebay.co.jp / payoneer.com）のみか
+ *   - links が https のみで、許可したホスト（ebay.com / ebay.co.jp / payoneer.com /
+ *     naokijodan.github.io、またはそれらのサブドメイン）のみか
  *   - "http://" を含んでいないか
  *   - updatedAt が YYYY-MM-DD 形式か
  * 最後に phases数 / steps数 / branchesを持つstep数 / checklist=trueのstep数 を表示する。
@@ -52,7 +53,16 @@ const PASTE_FIELDS = [
   "nameKatakanaFull",
 ];
 
-const ALLOWED_LINK_HOSTS = ["ebay.com", "www.ebay.com", "ebay.co.jp", "www.ebay.co.jp", "payoneer.com", "www.payoneer.com"];
+// リンク許可ホスト一覧(ベースドメイン)。"一致 または そのサブドメイン"が
+// 許可条件。ここを変更したときは ../extension/guideUtils.js の
+// ALLOWED_LINK_HOSTS / isAllowedLinkUrl も必ず同じ内容に合わせること
+// (ミラー、コメントで相互参照)。
+const ALLOWED_LINK_HOSTS = ["ebay.com", "ebay.co.jp", "payoneer.com", "naokijodan.github.io"];
+
+function isAllowedLinkHost(host) {
+  const h = String(host || "").toLowerCase();
+  return ALLOWED_LINK_HOSTS.some((domain) => h === domain || h.endsWith("." + domain));
+}
 
 const TOP_REQUIRED = ["version", "updatedAt", "phases"];
 const PHASE_REQUIRED = ["id", "pillar", "title", "steps"];
@@ -215,7 +225,7 @@ for (const [pi, phase] of data.phases.entries()) {
           fail(`step "${step.id}".links のURLが不正です: "${link.url}"`);
           continue;
         }
-        if (!ALLOWED_LINK_HOSTS.includes(host)) {
+        if (!isAllowedLinkHost(host)) {
           fail(`step "${step.id}".links に許可外のホストがあります: "${host}" (${link.url})`);
         }
       }
