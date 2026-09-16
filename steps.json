@@ -1,0 +1,1012 @@
+{
+  "version": "2026.09.1",
+  "updatedAt": "2026-09-16",
+  "phases": [
+    {
+      "id": "phase1-env",
+      "pillar": "環境の準備",
+      "title": "環境の準備",
+      "steps": [
+        {
+          "id": "p1-s01",
+          "site": "general",
+          "title": "Google Chromeを使っているか確認",
+          "studentText": "この拡張機能はGoogle Chrome専用です。ブラウザがChromeになっているか確認してください。",
+          "instructorText": "",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p1-s02",
+          "site": "general",
+          "title": "ポップアップ許可の確認",
+          "studentText": "eBay・Payoneerのサイトでポップアップがブロックされていると手続きが進まないことがあります。アドレスバーに次のURLをコピーして貼り付け、Enterキーを押してください。\n\nchrome://settings/content/popups\n\n開いた設定画面で、ebay.com と payoneer.com からのポップアップを「許可」に設定してください。",
+          "instructorText": "",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p1-s03",
+          "site": "general",
+          "title": "Zoom画面共有は「画面全体」を選ぶ",
+          "studentText": "Zoomで画面共有をするときは「画面全体」を選んでください。ウィンドウ単位の共有だと、途中で開くポップアップや別ウィンドウが講師の画面に映らないことがあります。",
+          "instructorText": "",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p1-s04",
+          "site": "general",
+          "title": "準備物の確認：メールアドレス",
+          "studentText": "ログインできる状態のメールアドレスを用意してください。",
+          "instructorText": "",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p1-s05",
+          "site": "general",
+          "title": "準備物の確認：携帯電話（SMS受信）",
+          "studentText": "SMSを受信できる状態の携帯電話を手元に用意してください。",
+          "instructorText": "",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p1-s06",
+          "site": "general",
+          "title": "準備物の確認：本人確認書類",
+          "studentText": "運転免許証またはパスポートを手元に用意してください。",
+          "instructorText": "",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p1-s07",
+          "site": "general",
+          "title": "準備物の確認：銀行口座情報",
+          "studentText": "銀行名・支店コード・口座番号がわかる状態にしておいてください。",
+          "instructorText": "",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p1-s08",
+          "site": "general",
+          "title": "準備物の確認：クレジットカードまたはデビットカード",
+          "studentText": "クレジットカードまたはデビットカードを手元に用意してください。",
+          "instructorText": "",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p1-s09",
+          "site": "general",
+          "title": "準備物の確認：住所のローマ字表記",
+          "studentText": "ご自身の住所のローマ字表記を確認しておいてください（このあとのステップで変換もできます）。",
+          "instructorText": "",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p1-s10",
+          "site": "general",
+          "title": "準備物の確認：開業届の有無",
+          "studentText": "開業届を出しているかどうかを確認しておいてください。このあとeBay・Payoneerのアカウントタイプ（Personal／Business）の選択に使います。",
+          "instructorText": "",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p1-s11",
+          "site": "general",
+          "title": "英語表記を事前に作っておく",
+          "studentText": "このパネルの「変換」セクションに、氏名（ふりがな）・郵便番号・番地・建物名・電話番号を入力して、英語表記への変換を先に済ませておいてください。以降の画面ではコピーボタンで貼り付けられます。",
+          "instructorText": "",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        }
+      ]
+    },
+    {
+      "id": "phase2-ebay-start",
+      "pillar": "eBayアカウント作成",
+      "title": "eBay言語設定とアカウント作成開始",
+      "steps": [
+        {
+          "id": "p2-s01",
+          "site": "ebay",
+          "title": "ebay.comにアクセス",
+          "studentText": "https://www.ebay.com にアクセスしてください。ebay.co.jpではなく、.comの方です。",
+          "instructorText": "まず ebay.com にアクセスしてください",
+          "image": "",
+          "links": [{"label": "eBay公式サイト", "url": "https://www.ebay.com/"}],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p2-s02",
+          "site": "ebay",
+          "title": "言語をEnglishに変更",
+          "studentText": "画面のどこかにある地球儀マークをクリックし、「日本語」になっている表示を「English」に変更してください。日本語のまま進めると、途中で先に進めなくなる場合があります。",
+          "instructorText": "画面のどこかに地球儀のマークがあると思います。そこに『日本語』って書いてあるところを『English』に変えてください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p2-s03",
+          "site": "ebay",
+          "title": "Registerをクリック",
+          "studentText": "左上の「Sign in or Register」から「Register」をクリックしてください。",
+          "instructorText": "左上のところに『Sign in or Register』って書いてあるところがあるので、Registerを押してください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p2-s04",
+          "site": "ebay",
+          "title": "アカウントタイプの選択（開業届の有無）",
+          "studentText": "開業届を出していますか？ 出している場合は画面上部の「Business」を選んで進み、あとで「Create Business Account」を押します。出していない場合は「Personal」を選んで進み、あとで「Create Personal Account」を押します。",
+          "instructorText": "上にPersonal、横にBusinessってあるので、Businessの方を押してください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [
+            {"condition": "開業届を出している場合", "text": "「Business」を選びます。この後の画面で「Create Business Account」ボタンを押します。"},
+            {"condition": "開業届を出していない場合", "text": "「Personal」を選びます。この後の画面で「Create Personal Account」ボタンを押します。"}
+          ],
+          "checklist": true
+        }
+      ]
+    },
+    {
+      "id": "phase3-ebay-info",
+      "pillar": "eBayアカウント作成",
+      "title": "eBay基本情報の入力",
+      "steps": [
+        {
+          "id": "p3-s01",
+          "site": "ebay",
+          "title": "Business Name入力",
+          "studentText": "「Business Name」欄に入力します。屋号があれば屋号を、なければフルネームを下の名前から先に入力してください（例：Taro Yamada）。",
+          "instructorText": "Business Nameを入れていただくんですけど、屋号とかお持ちですか？",
+          "image": "",
+          "links": [],
+          "pasteFields": ["fullNameFirstLast"],
+          "branches": [
+            {"condition": "屋号がない場合", "text": "下の名前から先にフルネームを入力します（例：Taro Yamada）。"}
+          ],
+          "checklist": true
+        },
+        {
+          "id": "p3-s02",
+          "site": "ebay",
+          "title": "メールアドレス入力",
+          "studentText": "「Email」欄にメールアドレスを入力してください。",
+          "instructorText": "次にEmailですね。メールアドレスを入力してください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p3-s03",
+          "site": "ebay",
+          "title": "パスワード入力",
+          "studentText": "「Password」欄にアルファベットと数字でパスワードを入力してください。このパスワードは後でも使うので覚えておいてください。",
+          "instructorText": "下にPasswordですね。アルファベットと数字でお願いします。これは覚えておいてくださいね",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p3-s04",
+          "site": "ebay",
+          "title": "チェックボックスとアカウント作成",
+          "studentText": "チェックボックスにはチェックを入れず、「Create Business Account」（Personalの場合は「Create Personal Account」）を押してください。",
+          "instructorText": "下のところ、チェック入れずに『Create Business Account』というところを押してください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p3-s05",
+          "site": "ebay",
+          "title": "「私は人間です」認証",
+          "studentText": "「私は人間です」の認証画面が表示されたら、画面の指示に従って認証を行ってください。",
+          "instructorText": "次に『私は人間です』を押してください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [
+            {"condition": "「私は人間です」認証画面が表示された場合", "text": "チェックボックスや指示に従って認証を完了させてください。"}
+          ],
+          "checklist": true
+        },
+        {
+          "id": "p3-s06",
+          "site": "ebay",
+          "title": "国（Country）選択",
+          "studentText": "「Country」欄でJapanを選択してください。",
+          "instructorText": "Countryってありますので、そこにチェック入れてもらって",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p3-s07",
+          "site": "ebay",
+          "title": "メール認証コード入力",
+          "studentText": "登録したメールアドレスに届いたコードを入力し、「Verify」を押してください。",
+          "instructorText": "メールアドレスにコードが飛んでくるので、それを入力をお願いします\nVerifyを押してください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p3-s08",
+          "site": "ebay",
+          "title": "SMS認証（1回目）",
+          "studentText": "「Continue」を押してから、スマートフォンに届いたSMSコードを入力してください。電話番号は国番号をJapan（+81）にし、先頭の0を除いた番号で入力します（例：080-1234-5678→8012345678）。",
+          "instructorText": "またスマホにコードが飛んでくるので、Continueを押してから入力をお願いします",
+          "image": "",
+          "links": [],
+          "pasteFields": ["phoneNational"],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p3-s09",
+          "site": "ebay",
+          "title": "スキップ画面",
+          "studentText": "この画面が出たらスキップして問題ありません。一番下まで進み「Get Started」を押し、もう一度「Continue」を押してください。",
+          "instructorText": "ここはスキップで大丈夫です。一番下まで行って、Get Startedを押してください\nもう一回Continueを押してください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [
+            {"condition": "スキップ画面が表示された場合", "text": "一番下まで進み「Get Started」を押し、もう一度「Continue」を押します。"}
+          ],
+          "checklist": true
+        },
+        {
+          "id": "p3-s10",
+          "site": "ebay",
+          "title": "SMS認証（2回目）",
+          "studentText": "再びSMS認証が求められた場合は、「Text」を押してから届いたコードを入力してください。",
+          "instructorText": "もう一回スマホにコードが飛んでくるので、Textを押してからコードを入力してください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [
+            {"condition": "再度SMS認証画面が表示された場合", "text": "「Text」を押してから、届いたコードを入力します。"}
+          ],
+          "checklist": true
+        },
+        {
+          "id": "p3-s11",
+          "site": "ebay",
+          "title": "Payoneer連携の入口",
+          "studentText": "Payoneerのアカウントをまだ持っていない場合は「No, create one」を押してください。",
+          "instructorText": "ここは『No, create one』でお願いします",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [
+            {"condition": "すでにPayoneerアカウントを持っている場合", "text": "「Yes, sign in」を選び、既存のPayoneerアカウントでサインインしてください。"}
+          ],
+          "checklist": true
+        },
+        {
+          "id": "p3-s12",
+          "site": "general",
+          "title": "別ウィンドウが開きます",
+          "studentText": "ここからPayoneerの登録画面が別ウィンドウ（別タブ）で開きます。ポップアップがブロックされた場合は、アドレスバーに表示されるブロック通知から許可してください（①環境の準備のポップアップ許可も参照）。",
+          "instructorText": "",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": false
+        }
+      ]
+    },
+    {
+      "id": "phase4-payoneer-basic",
+      "pillar": "Payoneer登録",
+      "title": "Payoneer登録（日本語設定・代表者情報）",
+      "steps": [
+        {
+          "id": "p4-s01",
+          "site": "payoneer",
+          "title": "表示言語を日本語に変更",
+          "studentText": "Payoneerの画面左上にある3本線のメニューを押し、「English」から「日本語」に切り替えてください。これで画面が日本語表示になります。",
+          "instructorText": "Payoneerの画面に来たので、左上の3本線を押してもらっていいですか\nEnglishっていうところを押して、日本語を選択してください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p4-s02",
+          "site": "payoneer",
+          "title": "事業の法人格を選択",
+          "studentText": "「企業の情報」内、上から3つ目の「事業の法人格」をプルダウンから選択します。個人事業主として登録する場合は「個人事業主」を選んでください。",
+          "instructorText": "下に『企業の情報』っていうのがあるので、上から3つ目の『事業の法人格』っていうところをプルダウンしてください\n個人事業主でお願いします",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p4-s03",
+          "site": "payoneer",
+          "title": "正式代表者の情報（名・姓）",
+          "studentText": "「正式代表者の情報」内、「連絡担当者の名」に下の名前を、「姓」に苗字を入力してください。",
+          "instructorText": "下がっていただいて、『正式代表者の情報』っていうところに行きます\n『連絡担当者の名』ってところに、下のお名前だけ入れてください\nその下に『姓』のところがあるので、苗字を入れてください",
+          "image": "",
+          "links": [],
+          "pasteFields": ["firstName", "lastName"],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p4-s04",
+          "site": "payoneer",
+          "title": "連絡担当者の生年月日",
+          "studentText": "カレンダーから連絡担当者の生年月日を選択してください。",
+          "instructorText": "その下、連絡担当者の生年月日ですね。カレンダーで選んでください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        }
+      ]
+    },
+    {
+      "id": "phase5-payoneer-address-id",
+      "pillar": "Payoneer登録",
+      "title": "Payoneer 住所・本人情報入力",
+      "steps": [
+        {
+          "id": "p5-s01",
+          "site": "payoneer",
+          "title": "住所1（番地・丁目）の入力",
+          "studentText": "住所1は日本の書き方と順番が逆になります。番地の数字を先に入力し、半角スペースを空けてから丁目の数字だけを入力してください。「丁目」「番」「号」の文字は不要で、数字だけでOKです。例：4丁目16-1の場合→「16-1 4」と入力します（すべて半角）。",
+          "instructorText": "次に住所を入れていただくんですけど、番地を逆で、最初に番地の数字を持ってきます\nまず数字を先に入れてください。16-1の場合は16-1ですね\nスペースを開けて、次に丁目です。4丁目なら4",
+          "image": "",
+          "links": [],
+          "pasteFields": ["streetNumbersOnly"],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p5-s02",
+          "site": "payoneer",
+          "title": "住所2（マンション名・部屋番号）",
+          "studentText": "マンションにお住まいの場合は、「住所2」にマンション名をアルファベットで、その右側に部屋番号を入力してください。",
+          "instructorText": "マンションですか？ そしたら『住所2』っていうところにマンションの名前をアルファベットで入れて、その右側に部屋番号を入れてください",
+          "image": "",
+          "links": [],
+          "pasteFields": ["addressLine2"],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p5-s03",
+          "site": "payoneer",
+          "title": "都道府県・市区町村の入力",
+          "studentText": "都道府県名を入力し、市区町村名は例えば「松戸市」のように市区町村名だけを入力してください。",
+          "instructorText": "その下、都道府県名ですね\n市区町村名のところは、例えば『松戸市』だけで大丈夫です",
+          "image": "",
+          "links": [],
+          "pasteFields": ["state", "city"],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p5-s04",
+          "site": "payoneer",
+          "title": "郵便番号の入力",
+          "studentText": "郵便番号はハイフンなしで入力してください。",
+          "instructorText": "郵便番号はハイフンなしでお願いします",
+          "image": "",
+          "links": [],
+          "pasteFields": ["zipDigits"],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p5-s05",
+          "site": "payoneer",
+          "title": "国の選択",
+          "studentText": "国のプルダウンを一番下まで進め、「日本」を選択してください。",
+          "instructorText": "国のところ、プルダウンを押して一番下まで行ったら『日本』が出てくるので、それを選んでください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p5-s06",
+          "site": "payoneer",
+          "title": "電話番号・認証コードの入力",
+          "studentText": "電話番号を入力し、「コードを送信する」を押してください。届いた認証コードを入力し、「次へ」を押してください。",
+          "instructorText": "電話番号を入力して、『コードを送信する』を押してください\n次へ押してください",
+          "image": "",
+          "links": [],
+          "pasteFields": ["phoneNational"],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p5-s07",
+          "site": "payoneer",
+          "title": "パスワード設定",
+          "studentText": "パスワードを設定してください。eBayと同じものでも構いません。",
+          "instructorText": "パスワードですね。さっきと同じものでも大丈夫です",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p5-s08",
+          "site": "payoneer",
+          "title": "セキュリティの質問",
+          "studentText": "セキュリティの質問をプルダウンからわかりやすいものを選び、答えはアルファベットで入力してください。",
+          "instructorText": "セキュリティの質問っていうのがあるので、プルダウンでわかりやすいのを選んでください\n答えのところはアルファベットでお願いします",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p5-s09",
+          "site": "payoneer",
+          "title": "国籍の選択",
+          "studentText": "正式代表者の国籍のプルダウンを一番下まで進め、日本を選択してください。",
+          "instructorText": "正式代表者の国籍のところ、プルダウンで一番下です",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p5-s10",
+          "site": "payoneer",
+          "title": "本人確認書類の種類を選択",
+          "studentText": "本人確認書類は運転免許証またはパスポートのどちらかを選んでください。",
+          "instructorText": "本人確認書類は運転免許証とパスポートどちらをお持ちですか？\nプルダウンでパスポートを選んでください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [
+            {"condition": "運転免許証を選ぶ場合", "text": "プルダウンで「運転免許証」を選びます。"},
+            {"condition": "パスポートを選ぶ場合", "text": "プルダウンで「パスポート」を選びます。マニュアルでは、パスポートの方が審査に通りやすい傾向があるとされています。"}
+          ],
+          "checklist": true
+        },
+        {
+          "id": "p5-s11",
+          "site": "payoneer",
+          "title": "証明書番号の入力",
+          "studentText": "「ID番号」欄にパスポート番号（TやMなどから始まる番号）を入力してください。",
+          "instructorText": "ID番号のところにパスポート番号をお願いします。TとかMから始まる番号ですね",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p5-s12",
+          "site": "payoneer",
+          "title": "有効期限の入力",
+          "studentText": "カレンダーから本人確認書類の有効期限を選択してください。",
+          "instructorText": "有効期限ですね。カレンダーで選んでください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p5-s13",
+          "site": "payoneer",
+          "title": "現地語での名・姓（カタカナ）",
+          "studentText": "「現地語での名」に下の名前をカタカナで、その下の「姓」に苗字をカタカナで入力してください。この欄だけはローマ字ではなくカタカナのままです。一番下まで進んだら「次へ」を押してください。",
+          "instructorText": "現地語での名、ここだけカタカナでお願いします。下の名前ですね\nその下、姓もカタカナです\n一番下まで行って、次へ押してください",
+          "image": "",
+          "links": [],
+          "pasteFields": ["nameKatakanaFirst", "nameKatakanaLast"],
+          "branches": [],
+          "checklist": true
+        }
+      ]
+    },
+    {
+      "id": "phase6-payoneer-bank",
+      "pillar": "Payoneer登録",
+      "title": "銀行口座の登録",
+      "steps": [
+        {
+          "id": "p6-s01",
+          "site": "payoneer",
+          "title": "利用する銀行の確認",
+          "studentText": "売上金を受け取る日本の銀行口座を決めておいてください。",
+          "instructorText": "ここで日本の銀行口座を登録するので、銀行はどちらを予定されてますか？",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p6-s02",
+          "site": "payoneer",
+          "title": "銀行名（英語）の入力",
+          "studentText": "上から3つ目の「銀行名（英語）」欄に銀行名を入力してください。例えばSBIの場合は「SBI」と入力すると候補が表示されるので、その中から選択してください。",
+          "instructorText": "銀行名っていうのが上から3つ目にあります。『銀行名（英語）』って書かれているところです\n候補が出てくるので、それを選択してください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p6-s03",
+          "site": "payoneer",
+          "title": "口座名義の入力",
+          "studentText": "口座名義をカタカナで入力してください。日本語表記の通りで構いません。姓と名の間には半角スペースを入れます。",
+          "instructorText": "ここはカタカナで、名義人の名前を入れてください。日本語の表記通りで大丈夫です",
+          "image": "",
+          "links": [],
+          "pasteFields": ["nameKatakanaFull"],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p6-s04",
+          "site": "payoneer",
+          "title": "支店コードの入力",
+          "studentText": "3桁の支店コードを入力してください。",
+          "instructorText": "次に支店コードですね。3桁の番号を入力してください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p6-s05",
+          "site": "payoneer",
+          "title": "口座番号の入力",
+          "studentText": "口座番号を入力してください。",
+          "instructorText": "その下が口座番号ですね",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p6-s06",
+          "site": "payoneer",
+          "title": "口座種別の選択",
+          "studentText": "口座種別は「普通」を選択してください。",
+          "instructorText": "口座種別は普通ですか？ 普通を選択してください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p6-s07",
+          "site": "payoneer",
+          "title": "同意チェックと送信",
+          "studentText": "チェックボックスの上2つにチェックを入れて「送信」を押してください。続けて「Agree」、その後「OK」を押してください。",
+          "instructorText": "チェックボックス上2つにチェックを入れて、送信を押してください\nAgreeを押してください\nOKですね",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        }
+      ]
+    },
+    {
+      "id": "phase7-ebay-card-address",
+      "pillar": "eBayに戻ってカード情報・住所",
+      "title": "eBayに戻ってカード情報・住所",
+      "steps": [
+        {
+          "id": "p7-s01",
+          "site": "ebay",
+          "title": "eBay画面に戻ってContinue",
+          "studentText": "eBayの画面に戻ります。一番下までスクロールし、左下の「Continue」を押してください。",
+          "instructorText": "eBayの画面に戻ってくるので、一番下まで下がって、左下のContinueを押してください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p7-s02",
+          "site": "ebay",
+          "title": "住所の国をJapanに変更",
+          "studentText": "画面中央あたりの「United States」となっている国選択を、プルダウンから「Japan」に変更してください。",
+          "instructorText": "先に住所の方を入れたいので、下の方にいってください\n真ん中くらいに『United States』ってなっているところがあるので、プルダウンでJapanに変更してください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p7-s03",
+          "site": "ebay",
+          "title": "Street Addressの入力",
+          "studentText": "「Street Address」は番地から入力します。4丁目なら4から始めてください（例：4-16-1のように、丁目をスペースまたはハイフンで区切ります）。",
+          "instructorText": "Street Addressは、さっきと同じで番地から入れます。4丁目なら4から始めてください",
+          "image": "",
+          "links": [],
+          "pasteFields": ["addressLine1"],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p7-s04",
+          "site": "ebay",
+          "title": "Cityの入力",
+          "studentText": "「City」欄に市の名前を入力してください。",
+          "instructorText": "その下が市の名前ですね",
+          "image": "",
+          "links": [],
+          "pasteFields": ["city"],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p7-s05",
+          "site": "ebay",
+          "title": "Zip Codeの入力",
+          "studentText": "「Zip Code」欄に郵便番号を入力してください。",
+          "instructorText": "Zip Codeは郵便番号です",
+          "image": "",
+          "links": [],
+          "pasteFields": ["zipDash"],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p7-s06",
+          "site": "ebay",
+          "title": "Street 2の入力",
+          "studentText": "「Street 2」欄にマンション名をアルファベットで入力し、続けて部屋番号を入力してください。",
+          "instructorText": "Street 2のところに、マンション名をアルファベットで、そのあと部屋番号を入れてください",
+          "image": "",
+          "links": [],
+          "pasteFields": ["addressLine2"],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p7-s07",
+          "site": "ebay",
+          "title": "Stateの入力",
+          "studentText": "「State」欄に県名を入力してください。",
+          "instructorText": "Stateっていうのが県名ですね",
+          "image": "",
+          "links": [],
+          "pasteFields": ["state"],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p7-s08",
+          "site": "ebay",
+          "title": "Phone Numberの入力",
+          "studentText": "「Phone Number」は先頭の0から始めて構いません（国内表記のまま入力します）。",
+          "instructorText": "Phone Numberはゼロから始めて大丈夫です",
+          "image": "",
+          "links": [],
+          "pasteFields": ["phoneDomestic"],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p7-s09",
+          "site": "ebay",
+          "title": "カード情報の入力",
+          "studentText": "カード情報欄が表示されます。入力する前に画面共有を一時停止し、入力が終わったら画面共有を再開してください。",
+          "instructorText": "ここにカード情報を入れていただくんですけど、僕が見るとよくないので、一旦画面共有を停止していただいて、入力が終わったらまた共有をお願いします",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "notice": "画面共有を止めてください（カード情報入力中）",
+          "checklist": true
+        },
+        {
+          "id": "p7-s10",
+          "site": "ebay",
+          "title": "カード情報入力後にContinue",
+          "studentText": "カード情報の入力が終わったら「Continue」を押してください。画面共有を再開してください。",
+          "instructorText": "入力できましたら、Continueを押してください\nまた画面共有をお願いします",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p7-s11",
+          "site": "ebay",
+          "title": "Submit Requestを押す",
+          "studentText": "「Submit Request」ボタンを押して申請してください。",
+          "instructorText": "Submit Requestというボタンを押してください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        }
+      ]
+    },
+    {
+      "id": "phase8-payoneer-documents",
+      "pillar": "Payoneer本人確認書類",
+      "title": "本人確認書類のアップロード",
+      "steps": [
+        {
+          "id": "p8-s01",
+          "site": "payoneer",
+          "title": "Payoneerへの再アクセス",
+          "studentText": "Zoomチャットに送られたリンクから開いてログインしてください。リンクがない場合はPayoneer公式サイトに直接アクセスしてログインしてください。",
+          "instructorText": "Payoneerに連携をしていないので、Zoomのチャットにリンクを送るので、そこから開いてログインしてください",
+          "image": "",
+          "links": [{"label": "Payoneer公式サイト", "url": "https://www.payoneer.com/"}],
+          "pasteFields": [],
+          "branches": [
+            {"condition": "Zoomチャットのリンクが使えない場合", "text": "Payoneer公式サイト（https://www.payoneer.com/）に直接アクセスしてログインしてください。"}
+          ],
+          "checklist": true
+        },
+        {
+          "id": "p8-s02",
+          "site": "payoneer",
+          "title": "セキュリティ設定の更新",
+          "studentText": "「今すぐ更新する」ボタンを押してください。",
+          "instructorText": "『今すぐ更新する』っていうボタンを押してください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p8-s03",
+          "site": "payoneer",
+          "title": "セキュリティの質問と答え",
+          "studentText": "セキュリティの質問と答えをアルファベットで入力してください。もう一つ別の質問も選んでください。",
+          "instructorText": "セキュリティの質問と答えをアルファベットで入力してください\nセキュリティの質問、もう一つ選んでください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p8-s04",
+          "site": "payoneer",
+          "title": "「変更する」とメール認証コード",
+          "studentText": "「変更する」を押すとメールにコードが届くので、そのコードを入力してください。",
+          "instructorText": "『変更する』を押すと、メールにコードが届くので入力してください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p8-s05",
+          "site": "payoneer",
+          "title": "本人確認書類の提出画面へ",
+          "studentText": "右側の「今すぐ提出」を押して、本人確認書類の提出画面に進んでください。",
+          "instructorText": "右側に『今すぐ提出』っていうところがあるので、そこを押してください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p8-s06",
+          "site": "payoneer",
+          "title": "顔認証（QRコード）",
+          "studentText": "画面上部右側の「操作」を押し、チェックで進むと表示されるQRコードをスマートフォンで読み取ってください。",
+          "instructorText": "上の方です。右側に操作っていうのがあるので、それを押してください\nチェックで進んでもらったら、QRコードが出てくるので、スマホで読み取ってください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p8-s07",
+          "site": "payoneer",
+          "title": "免許証・パスポートと顔の撮影",
+          "studentText": "運転免許証またはパスポートの画像と、ご自身の顔を一緒に撮影する画面が出ます。この撮影は後で行っても構いません。",
+          "instructorText": "免許証やパスポートの画像と、ご自身の顔と一緒に撮る画面があるので、それはあとでやっておいてください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p8-s08",
+          "site": "payoneer",
+          "title": "住所確認書類の準備",
+          "studentText": "住所確認書類として、住民票、公共料金の請求書（3ヶ月以内のもの）、銀行口座明細書などを用意してください。重要：住所は完全一致している必要があります。番地の「1」が抜けているだけでNGになった例があるので、一字一句そのまま確認してください。",
+          "instructorText": "戻っていただいて、住所確認なんですけど\n公共料金の請求書か住民票がいいんですけど、今お持ちですか？",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p8-s09",
+          "site": "payoneer",
+          "title": "書類のアップロード",
+          "studentText": "「ファイルを選ぶ」またはドラッグ＆ドロップで画像をアップロードしてください。名前と日付（3ヶ月以内）が確認できれば大丈夫です。",
+          "instructorText": "『ファイルを選ぶ』か、ドラッグで画像をアップロードしてください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        }
+      ]
+    },
+    {
+      "id": "phase9-finish",
+      "pillar": "完了チェック・セラーポータル",
+      "title": "完了チェック・セラーポータル",
+      "steps": [
+        {
+          "id": "p9-s01",
+          "site": "general",
+          "title": "審査待ちの説明",
+          "studentText": "あとはPayoneerの審査を待ちます。審査が通るとeBayでの販売を開始できます。審査は通常1〜3営業日ですが、場合によっては数週間かかることもあります。",
+          "instructorText": "これであとはPayoneerの審査を待って、通ったらeBayでの販売を開始できます",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": false
+        },
+        {
+          "id": "p9-s02",
+          "site": "general",
+          "title": "会員サイトの案内",
+          "studentText": "スクールの会員サイトの「はじめに・準備編」を進めてください。",
+          "instructorText": "会員サイトは開けられますか？\nトップページを開いていただいて、まず一通り全部見ていただいて\n右上の方に『はじめに・準備編』っていうところがあるので、そこを押してください\n星マークがついているところが、アカウントとPayoneer審査を待っている間にできるところなので、それを進めていただいて\nとりあえず3、4、5、6、8あたりですね。アカウントができたら他のところも進めてください",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p9-s03",
+          "site": "general",
+          "title": "クロージングの質問確認",
+          "studentText": "ここまでで質問があれば確認しておきましょう。",
+          "instructorText": "本日は以上になります。何かご質問とか聞きたいことありますか？",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": false
+        },
+        {
+          "id": "p9-s04",
+          "site": "ebay",
+          "title": "セラーポータルへの登録",
+          "studentText": "eBay Japanが運営する「セラーポータル」に登録すると、日本語での無料サポート、販売リミットの大幅アップ（審査通過後：250品/$25,000 または 500品/$50,000）、日本語のセラー向け情報、セミナー・勉強会への参加といった特典が受けられます。https://www.ebay.co.jp/start/ にアクセスし、「販売サポートに申し込む」を押して、eBayアカウント情報と必要事項を入力して申請してください。",
+          "instructorText": "",
+          "image": "",
+          "links": [{"label": "eBay Japan セラーポータル", "url": "https://www.ebay.co.jp/start/"}],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": true
+        },
+        {
+          "id": "p9-s05",
+          "site": "general",
+          "title": "連携できない場合のチェックポイント",
+          "studentText": "eBayとPayoneerの連携がうまくいかない場合は、次を確認してください。\n・eBayとPayoneerの名前が完全一致しているか\n・住所が一致しているか\n・アカウントタイプ（個人/ビジネス）が一致しているか\n・Payoneerの審査が完了しているか",
+          "instructorText": "",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": false
+        },
+        {
+          "id": "p9-s06",
+          "site": "general",
+          "title": "よくある質問",
+          "studentText": "Q. 登録は無料ですか？　A. eBay・Payoneerともに登録は無料です。eBayは出品時や販売成立時に手数料がかかります。\nQ. 審査にはどれくらいかかりますか？　A. 通常1〜3営業日ですが、書類の追加提出が必要な場合は数週間かかることもあります。\nQ. クレジットカードは必須ですか？　A. eBayのセラー手数料の支払いに使います。デビットカードでも登録できます。\nQ. 英語ができなくても大丈夫ですか？　A. 登録作業は英語ですが、翻訳ツールで対応できます。セラーポータルに登録すれば日本語サポートも受けられます。\nQ. 開業届は必要ですか？　A. 個人として始める場合は不要です。売上が増えたら税務上の理由から提出を検討してください。\nQ. Payoneerから日本の銀行口座への出金手数料は？　A. 出金手数料は無料ですが、為替手数料（約2%）がかかります。\nQ. 複数のeBayアカウントを1つのPayoneerに連携できますか？　A. 同一事業体（同じ名前・住所）であれば複数連携可能です。",
+          "instructorText": "",
+          "image": "",
+          "links": [],
+          "pasteFields": [],
+          "branches": [],
+          "checklist": false
+        }
+      ]
+    }
+  ]
+}
