@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://naokijodan.github.io/account-guide-kun/data/schema.json",
-  "title": "アカウント開設ガイド君 手順データ",
+  "title": "アカウント作成君 手順データ",
   "description": "eBay・Payoneerアカウント開設ウィザードの手順データ（steps.json）のスキーマ。",
   "type": "object",
   "required": ["version", "updatedAt", "phases"],

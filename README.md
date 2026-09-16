@@ -1,6 +1,6 @@
 # data/ フォルダについて（椛島さん向け）
 
-このフォルダには、サイドパネル・ウィザード拡張機能（アカウント開設ガイド君／仮称）が読み込む「手順データ」が入っています。拡張機能のコード本体はこのフォルダを触らず、ここにあるJSONを読み込んで表示するだけです。手順の文言を直したいときは、このフォルダの `steps.json` を編集してください。
+このフォルダには、サイドパネル・ウィザード拡張機能（アカウント作成君）が読み込む「手順データ」が入っています。拡張機能のコード本体はこのフォルダを触らず、ここにあるJSONを読み込んで表示するだけです。手順の文言を直したいときは、このフォルダの `steps.json` を編集してください。
 
 ## ファイル一覧
 
@@ -140,7 +140,7 @@
 ターミナルで `data` フォルダに移動して実行します（Node.jsが入っていれば追加インストール不要）。
 
 ```bash
-cd "/Users/naokijodan/Desktop/アカウント開設ガイド君/data"
+cd "/Users/naokijodan/Desktop/アカウント作成君/data"
 node validate.js
 ```
 
@@ -168,7 +168,7 @@ checklist steps (checklist=true): 72
 - 公開リポジトリ: https://github.com/naokijodan/account-guide-data （public）
 - 公開URL（GitHub Pages）: https://naokijodan.github.io/account-guide-data/steps.json
   （2026-09-16確認済み: 200 OK、`Content-Type: application/json`、`Access-Control-Allow-Origin: *`）
-- このフォルダ（`/Users/naokijodan/Desktop/アカウント開設ガイド君/data/`）がそのままGit管理下にあります（ブランチ `main`、リモート `origin`）
+- このフォルダ（`/Users/naokijodan/Desktop/アカウント作成君/data/`）がそのままGit管理下にあります（ブランチ `main`、リモート `origin`）
 - **`git push` した時点でGitHub Pagesに公開されます。** 椛島さんが `steps.json` を編集 → `node validate.js` でエラー0件を確認 → `git commit` → `git push`、という流れです
 - 拡張機能自体の再申請は不要で、次にパネルを開いたときから新しい内容が反映されます（即時反映ではなく「次回読み込み時」）
 - **公開前には必ず `node validate.js` でエラーが0件であることを確認してください**（pushすると即座に公開されるため）

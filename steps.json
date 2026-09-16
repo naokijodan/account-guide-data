@@ -153,7 +153,12 @@
           "studentText": "https://www.ebay.com にアクセスしてください。ebay.co.jpではなく、.comの方です。",
           "instructorText": "まず ebay.com にアクセスしてください",
           "image": "",
-          "links": [{"label": "eBay公式サイト", "url": "https://www.ebay.com/"}],
+          "links": [
+            {
+              "label": "eBay公式サイト",
+              "url": "https://www.ebay.com/"
+            }
+          ],
           "pasteFields": [],
           "branches": [],
           "checklist": true
@@ -192,8 +197,14 @@
           "links": [],
           "pasteFields": [],
           "branches": [
-            {"condition": "開業届を出している場合", "text": "「Business」を選びます。この後の画面で「Create Business Account」ボタンを押します。"},
-            {"condition": "開業届を出していない場合", "text": "「Personal」を選びます。この後の画面で「Create Personal Account」ボタンを押します。"}
+            {
+              "condition": "開業届を出している場合",
+              "text": "「Business」を選びます。この後の画面で「Create Business Account」ボタンを押します。"
+            },
+            {
+              "condition": "開業届を出していない場合",
+              "text": "「Personal」を選びます。この後の画面で「Create Personal Account」ボタンを押します。"
+            }
           ],
           "checklist": true
         }
@@ -212,9 +223,14 @@
           "instructorText": "Business Nameを入れていただくんですけど、屋号とかお持ちですか？",
           "image": "",
           "links": [],
-          "pasteFields": ["fullNameFirstLast"],
+          "pasteFields": [
+            "fullNameFirstLast"
+          ],
           "branches": [
-            {"condition": "屋号がない場合", "text": "下の名前から先にフルネームを入力します（例：Taro Yamada）。"}
+            {
+              "condition": "屋号がない場合",
+              "text": "下の名前から先にフルネームを入力します（例：Taro Yamada）。"
+            }
           ],
           "checklist": true
         },
@@ -264,7 +280,10 @@
           "links": [],
           "pasteFields": [],
           "branches": [
-            {"condition": "「私は人間です」認証画面が表示された場合", "text": "チェックボックスや指示に従って認証を完了させてください。"}
+            {
+              "condition": "「私は人間です」認証画面が表示された場合",
+              "text": "チェックボックスや指示に従って認証を完了させてください。"
+            }
           ],
           "checklist": true
         },
@@ -300,7 +319,9 @@
           "instructorText": "またスマホにコードが飛んでくるので、Continueを押してから入力をお願いします",
           "image": "",
           "links": [],
-          "pasteFields": ["phoneNational"],
+          "pasteFields": [
+            "phoneNational"
+          ],
           "branches": [],
           "checklist": true
         },
@@ -314,7 +335,10 @@
           "links": [],
           "pasteFields": [],
           "branches": [
-            {"condition": "スキップ画面が表示された場合", "text": "一番下まで進み「Get Started」を押し、もう一度「Continue」を押します。"}
+            {
+              "condition": "スキップ画面が表示された場合",
+              "text": "一番下まで進み「Get Started」を押し、もう一度「Continue」を押します。"
+            }
           ],
           "checklist": true
         },
@@ -328,7 +352,10 @@
           "links": [],
           "pasteFields": [],
           "branches": [
-            {"condition": "再度SMS認証画面が表示された場合", "text": "「Text」を押してから、届いたコードを入力します。"}
+            {
+              "condition": "再度SMS認証画面が表示された場合",
+              "text": "「Text」を押してから、届いたコードを入力します。"
+            }
           ],
           "checklist": true
         },
@@ -342,7 +369,10 @@
           "links": [],
           "pasteFields": [],
           "branches": [
-            {"condition": "すでにPayoneerアカウントを持っている場合", "text": "「Yes, sign in」を選び、既存のPayoneerアカウントでサインインしてください。"}
+            {
+              "condition": "すでにPayoneerアカウントを持っている場合",
+              "text": "「Yes, sign in」を選び、既存のPayoneerアカウントでサインインしてください。"
+            }
           ],
           "checklist": true
         },
@@ -397,7 +427,10 @@
           "instructorText": "下がっていただいて、『正式代表者の情報』っていうところに行きます\n『連絡担当者の名』ってところに、下のお名前だけ入れてください\nその下に『姓』のところがあるので、苗字を入れてください",
           "image": "",
           "links": [],
-          "pasteFields": ["firstName", "lastName"],
+          "pasteFields": [
+            "firstName",
+            "lastName"
+          ],
           "branches": [],
           "checklist": true
         },
@@ -428,7 +461,9 @@
           "instructorText": "次に住所を入れていただくんですけど、番地を逆で、最初に番地の数字を持ってきます\nまず数字を先に入れてください。16-1の場合は16-1ですね\nスペースを開けて、次に丁目です。4丁目なら4",
           "image": "",
           "links": [],
-          "pasteFields": ["streetNumbersOnly"],
+          "pasteFields": [
+            "streetNumbersOnly"
+          ],
           "branches": [],
           "checklist": true
         },
@@ -440,7 +475,9 @@
           "instructorText": "マンションですか？ そしたら『住所2』っていうところにマンションの名前をアルファベットで入れて、その右側に部屋番号を入れてください",
           "image": "",
           "links": [],
-          "pasteFields": ["addressLine2"],
+          "pasteFields": [
+            "addressLine2"
+          ],
           "branches": [],
           "checklist": true
         },
@@ -452,7 +489,10 @@
           "instructorText": "その下、都道府県名ですね\n市区町村名のところは、例えば『松戸市』だけで大丈夫です",
           "image": "",
           "links": [],
-          "pasteFields": ["state", "city"],
+          "pasteFields": [
+            "state",
+            "city"
+          ],
           "branches": [],
           "checklist": true
         },
@@ -464,7 +504,9 @@
           "instructorText": "郵便番号はハイフンなしでお願いします",
           "image": "",
           "links": [],
-          "pasteFields": ["zipDigits"],
+          "pasteFields": [
+            "zipDigits"
+          ],
           "branches": [],
           "checklist": true
         },
@@ -488,7 +530,9 @@
           "instructorText": "電話番号を入力して、『コードを送信する』を押してください\n次へ押してください",
           "image": "",
           "links": [],
-          "pasteFields": ["phoneNational"],
+          "pasteFields": [
+            "phoneNational"
+          ],
           "branches": [],
           "checklist": true
         },
@@ -538,8 +582,14 @@
           "links": [],
           "pasteFields": [],
           "branches": [
-            {"condition": "運転免許証を選ぶ場合", "text": "プルダウンで『運転免許証』を選び、次のステップで免許証番号を入力します"},
-            {"condition": "パスポートを選ぶ場合", "text": "プルダウンで『パスポート』を選び、次のステップでパスポート番号（TやMなどから始まる番号）を入力します"}
+            {
+              "condition": "運転免許証を選ぶ場合",
+              "text": "プルダウンで『運転免許証』を選び、次のステップで免許証番号を入力します"
+            },
+            {
+              "condition": "パスポートを選ぶ場合",
+              "text": "プルダウンで『パスポート』を選び、次のステップでパスポート番号（TやMなどから始まる番号）を入力します"
+            }
           ],
           "checklist": true
         },
@@ -548,7 +598,7 @@
           "site": "payoneer",
           "title": "証明書番号の入力",
           "studentText": "パスポートの場合はパスポート番号（TやMなどから始まる番号）、運転免許証の場合は免許証番号を『ID番号』欄に入力してください",
-          "instructorText": "ID番号のところにパスポート番号をお願いします。TとかMから始まる番号ですね",
+          "instructorText": "ID番号のところに、パスポートの方はパスポート番号（TとかMから始まる番号）、運転免許証の方は免許証番号をお願いします",
           "image": "",
           "links": [],
           "pasteFields": [],
@@ -575,7 +625,10 @@
           "instructorText": "現地語での名、ここだけカタカナでお願いします。下の名前ですね\nその下、姓もカタカナです\n一番下まで行って、次へ押してください",
           "image": "",
           "links": [],
-          "pasteFields": ["nameKatakanaFirst", "nameKatakanaLast"],
+          "pasteFields": [
+            "nameKatakanaFirst",
+            "nameKatakanaLast"
+          ],
           "branches": [],
           "checklist": true
         }
@@ -618,7 +671,9 @@
           "instructorText": "ここはカタカナで、名義人の名前を入れてください。日本語の表記通りで大丈夫です",
           "image": "",
           "links": [],
-          "pasteFields": ["nameKatakanaFull"],
+          "pasteFields": [
+            "nameKatakanaFull"
+          ],
           "branches": [],
           "checklist": true
         },
@@ -709,7 +764,9 @@
           "instructorText": "Street Addressは、さっきと同じで番地から入れます。4丁目なら4から始めてください",
           "image": "",
           "links": [],
-          "pasteFields": ["addressLine1"],
+          "pasteFields": [
+            "addressLine1"
+          ],
           "branches": [],
           "checklist": true
         },
@@ -721,7 +778,9 @@
           "instructorText": "その下が市の名前ですね",
           "image": "",
           "links": [],
-          "pasteFields": ["city"],
+          "pasteFields": [
+            "city"
+          ],
           "branches": [],
           "checklist": true
         },
@@ -733,7 +792,9 @@
           "instructorText": "Zip Codeは郵便番号です",
           "image": "",
           "links": [],
-          "pasteFields": ["zipDash"],
+          "pasteFields": [
+            "zipDash"
+          ],
           "branches": [],
           "checklist": true
         },
@@ -745,7 +806,9 @@
           "instructorText": "Street 2のところに、マンション名をアルファベットで、そのあと部屋番号を入れてください",
           "image": "",
           "links": [],
-          "pasteFields": ["addressLine2"],
+          "pasteFields": [
+            "addressLine2"
+          ],
           "branches": [],
           "checklist": true
         },
@@ -757,7 +820,9 @@
           "instructorText": "Stateっていうのが県名ですね",
           "image": "",
           "links": [],
-          "pasteFields": ["state"],
+          "pasteFields": [
+            "state"
+          ],
           "branches": [],
           "checklist": true
         },
@@ -769,7 +834,9 @@
           "instructorText": "Phone Numberはゼロから始めて大丈夫です",
           "image": "",
           "links": [],
-          "pasteFields": ["phoneDomestic"],
+          "pasteFields": [
+            "phoneDomestic"
+          ],
           "branches": [],
           "checklist": true
         },
@@ -824,10 +891,18 @@
           "studentText": "Zoomチャットに送られたリンクから開いてログインしてください。リンクがない場合はPayoneer公式サイトに直接アクセスしてログインしてください。",
           "instructorText": "Payoneerに連携をしていないので、Zoomのチャットにリンクを送るので、そこから開いてログインしてください",
           "image": "",
-          "links": [{"label": "Payoneer公式サイト", "url": "https://www.payoneer.com/"}],
+          "links": [
+            {
+              "label": "Payoneer公式サイト",
+              "url": "https://www.payoneer.com/"
+            }
+          ],
           "pasteFields": [],
           "branches": [
-            {"condition": "Zoomチャットのリンクが使えない場合", "text": "Payoneer公式サイト（https://www.payoneer.com/）に直接アクセスしてログインしてください。"}
+            {
+              "condition": "Zoomチャットのリンクが使えない場合",
+              "text": "Payoneer公式サイト（https://www.payoneer.com/）に直接アクセスしてログインしてください。"
+            }
           ],
           "checklist": true
         },
@@ -977,7 +1052,12 @@
           "studentText": "eBay Japanが運営する「セラーポータル」に登録すると、日本語での無料サポート、販売リミットの大幅アップ（審査通過後：250品/$25,000 または 500品/$50,000）、日本語のセラー向け情報、セミナー・勉強会への参加といった特典が受けられます。https://www.ebay.co.jp/start/ にアクセスし、「販売サポートに申し込む」を押して、eBayアカウント情報と必要事項を入力して申請してください。",
           "instructorText": "",
           "image": "",
-          "links": [{"label": "eBay Japan セラーポータル", "url": "https://www.ebay.co.jp/start/"}],
+          "links": [
+            {
+              "label": "eBay Japan セラーポータル",
+              "url": "https://www.ebay.co.jp/start/"
+            }
+          ],
           "pasteFields": [],
           "branches": [],
           "checklist": true
