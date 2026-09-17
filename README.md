@@ -152,9 +152,9 @@ PASS: エラーはありませんでした。
 
 === カウント ===
 phases: 9
-steps: 78
+steps: 95
 steps with branches: 7
-checklist steps (checklist=true): 73
+checklist steps (checklist=true): 91
 ```
 
 エラーがある場合は `FAIL: n件のエラーがあります。` の下に、どのステップの何がおかしいかが日本語で1行ずつ出ます。エラーが0件になるまで直してから、拡張機能側・公開先に反映してください。
