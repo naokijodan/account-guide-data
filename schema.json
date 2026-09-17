@@ -61,7 +61,6 @@
         "site",
         "title",
         "studentText",
-        "instructorText",
         "image",
         "links",
         "pasteFields",
@@ -87,13 +86,10 @@
           "description": "受講生向けの平易な案内文。空文字は不可。",
           "minLength": 1
         },
-        "instructorText": {
-          "type": "string",
-          "description": "講師用マニュアルの声掛け文そのまま。マニュアルに該当箇所がなければ空文字。"
-        },
         "image": {
           "type": "string",
-          "description": "案内画像のパス。v1では常に空文字。"
+          "description": "案内画像（見本スクリーンショット）の相対パス。画像なしは空文字。値がある場合は images/ 直下のファイル名のみ許可（上位階層への移動・追加のディレクトリ階層・URL・data:スキームは不可）。",
+          "pattern": "^$|^images/[A-Za-z0-9][A-Za-z0-9._-]*\\.(png|jpg|jpeg|webp)$"
         },
         "links": {
           "type": "array",

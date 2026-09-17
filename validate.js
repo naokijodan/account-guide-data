@@ -13,6 +13,9 @@
  *     naokijodan.github.io、またはそれらのサブドメイン）のみか
  *   - "http://" を含んでいないか
  *   - updatedAt が YYYY-MM-DD 形式か
+ *   - image が空文字、または "images/<name>.(png|jpg|jpeg|webp)" 形式で、
+ *     かつ data/images/ に実在するファイルを指しているか（エラー）
+ *   - data/images/ にあるのにどのstepからも参照されていない画像があれば警告
  * 最後に phases数 / steps数 / branchesを持つstep数 / checklist=trueのstep数 を表示する。
  */
 
@@ -20,6 +23,12 @@ const fs = require("fs");
 const path = require("path");
 
 const STEPS_PATH = path.join(__dirname, "steps.json");
+const IMAGES_DIR = path.join(__dirname, "images");
+
+// extension/guideUtils.js の isValidImagePath / IMAGE_PATH_PATTERN と同じ形式。
+// ここを変更したときは ../extension/guideUtils.js と ../data/schema.json の
+// pattern も必ず同じ内容に合わせること(ミラー、コメントで相互参照)。
+const IMAGE_PATH_PATTERN = /^images\/[A-Za-z0-9][A-Za-z0-9._-]*\.(png|jpg|jpeg|webp)$/;
 
 const PILLARS = [
   "環境の準備",
@@ -71,7 +80,6 @@ const STEP_REQUIRED = [
   "site",
   "title",
   "studentText",
-  "instructorText",
   "image",
   "links",
   "pasteFields",
@@ -131,6 +139,7 @@ const stepIds = new Set();
 let totalSteps = 0;
 let stepsWithBranches = 0;
 let stepsChecklistTrue = 0;
+const referencedImages = new Set();
 
 for (const [pi, phase] of data.phases.entries()) {
   const phaseLabel = `phases[${pi}]`;
@@ -188,10 +197,6 @@ for (const [pi, phase] of data.phases.entries()) {
 
     if (typeof step.studentText !== "string" || step.studentText.trim() === "") {
       fail(`step "${step.id}".studentText が空です`);
-    }
-
-    if (typeof step.instructorText !== "string") {
-      fail(`step "${step.id}".instructorText が文字列ではありません`);
     }
 
     if (Array.isArray(step.pasteFields)) {
@@ -254,10 +259,39 @@ for (const [pi, phase] of data.phases.entries()) {
       fail(`step "${step.id}".notice がある場合は空でない文字列である必要があります`);
     }
 
+    if ("image" in step) {
+      if (typeof step.image !== "string") {
+        fail(`step "${step.id}".image が文字列ではありません`);
+      } else if (step.image !== "") {
+        if (!IMAGE_PATH_PATTERN.test(step.image)) {
+          fail(`step "${step.id}".image の形式が不正です（"images/<ファイル名>.png|jpg|jpeg|webp" の形式のみ許可）: "${step.image}"`);
+        } else {
+          referencedImages.add(step.image);
+          const imageFilePath = path.join(__dirname, step.image);
+          if (!fs.existsSync(imageFilePath)) {
+            fail(`step "${step.id}".image が参照しているファイルが data/images/ に見つかりません: "${step.image}"`);
+          }
+        }
+      }
+    }
+
     // 全体で "http://" 混入チェック（テキスト中も含む）
     const flatText = JSON.stringify(step);
     if (flatText.includes("http://")) {
       warn(`step "${step.id}" のどこかに "http://" という文字列が含まれています（リンク以外の可能性あり、要確認）`);
+    }
+  }
+}
+
+// --- data/images/ にあるのにどのstepからも参照されていない画像を警告 ---
+if (fs.existsSync(IMAGES_DIR)) {
+  const filesOnDisk = fs.readdirSync(IMAGES_DIR).filter((name) => {
+    return fs.statSync(path.join(IMAGES_DIR, name)).isFile();
+  });
+  for (const name of filesOnDisk) {
+    const relPath = "images/" + name;
+    if (!referencedImages.has(relPath)) {
+      warn(`data/images/${name} はどのstepの image からも参照されていません`);
     }
   }
 }
